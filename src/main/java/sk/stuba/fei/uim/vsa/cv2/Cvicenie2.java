@@ -9,11 +9,8 @@ import java.util.Date;
 public class Cvicenie2 {
 
     public static void main(String[] args) {
-        Person person = new Person();
-        person.setName("Milan");
-        person.setAge(30);
-        person.setDateOfBirth(new Date());
-
+        Person person = new Person("Milan", 30, new Date());
+        System.out.print(person);
         save(person);
 
         //TypedQuery<Person> query = manager.createNamedQuery(Person.FIND_BY_ID, Person.class);
